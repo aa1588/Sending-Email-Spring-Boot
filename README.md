@@ -106,7 +106,7 @@ This will start the MailHog server and the application in a docker container, yo
 #### Send an email using text Template
 
 ```http
-  GET api/template?to=amrit_dev@gmail.com&subject=my subject&name=AMRIT
+  POST api/template?to=amrit_dev@gmail.com&subject=my subject&name=AMRIT
 ```
 
 | Parameter | Type     | Description                                           |
