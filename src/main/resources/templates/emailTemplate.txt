@@ -1,0 +1,8 @@
+Subject: {{subject}}
+
+Hello {{name}},
+
+This is a test email with a template.
+
+Thank you,
+Your Email Application

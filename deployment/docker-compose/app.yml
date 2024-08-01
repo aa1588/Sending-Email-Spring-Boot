@@ -1,0 +1,20 @@
+name: 'spring-boot-email-app-with-mailhog'
+services:
+  email-service:
+    image: thestackschool/email-mailhog-spring-boot:1.0.0
+    container_name: email-service
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SERVER_PORT=8080
+      - MAIL_HOST=mailhog
+      - MAIL_PORT=1025
+      - MAIL_USERNAME=guest
+      - MAIL_PASSWORD=password
+      - SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true
+      - SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE=true
+
+    depends_on:
+      mailhog:
+        condition: service_started
