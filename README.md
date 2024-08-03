@@ -51,7 +51,7 @@ Alternatively, if you've installed `Taskfile`, Instead of `steps 1,2`, simply ru
   task start_infra
 ```
 
-This will start the MailHog server in a docker container, you can RUN the app from the IDE and access it at `http://localhost:8083/`.
+This will start the MailHog server in a docker container, you can RUN the app from the IDE or RUN mvn `mvn spring-boot:run` and access it at `http://localhost:8083/`.
 
 
 ## Run Inside a Docker Environment
